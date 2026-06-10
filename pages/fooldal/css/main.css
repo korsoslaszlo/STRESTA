@@ -9,9 +9,9 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: #111;
-    background: url(../../images/arab_hatter.png);
+    background: url(../../images/arab_hatter.png) no-repeat center center fixed;
+    background-size: cover;
 }
-
 
 nav {
     background-color: rgb(209, 209, 209);
@@ -158,4 +158,134 @@ main {
     font-size: 24px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+}
+
+.aloldal-main {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.szekcio {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.szekcio h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.termek-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.termek-kartya {
+    position: relative;
+    width: 220px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    flex-grow: 1;
+    max-width: 250px;
+}
+
+.termek-kartya img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.termek-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 15px 15px 15px;
+    background: linear-gradient(to top, rgba(0,0,0,0.95), transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.szoveg {
+    display: flex;
+    flex-direction: column;
+}
+
+.termek-nev {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.ar {
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.kosar-gomb {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.kosar-gomb:hover {
+    background-color: #333;
+    color: white;
+}
+
+.footer {
+    background-color: #dcdcdc;
+    width: 100%;
+    padding: 40px 20px 20px 20px;
+}
+
+.footer-tartalom {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-ikon {
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-oszlop {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-oszlop a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+}
+
+.footer-oszlop a:hover {
+    font-weight: bold;
+}
+
+.footer-also {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
 }
